@@ -13,5 +13,11 @@ public abstract class GameObject {
    }
    abstract public void move(ArrayList<Rectangle> barriers);
    
+   public void draw(){
+       image.draw(hitbox.getX(), hitbox.getY());
+   }
+   public Rectangle getHitbox(){
+       return hitbox;
+   }
    
 }

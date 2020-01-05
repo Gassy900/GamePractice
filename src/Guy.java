@@ -74,6 +74,9 @@ public class Guy {
         }
         return false;
     }
+    public boolean isHitting(GameObject go){
+        return hitbox.intersects(go.getHitbox());
+    }
     public void draw(){
         if(stopped) {
             ani[dir].stop();
